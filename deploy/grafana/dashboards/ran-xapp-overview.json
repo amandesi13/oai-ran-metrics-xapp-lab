@@ -1,0 +1,51 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "panels": [
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": {"defaults": {}, "overrides": []},
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0},
+      "id": 1,
+      "targets": [{"expr": "ran_cell_dl_prb_utilization_pct", "legendFormat": "{{cell_id}} DL PRB"}],
+      "title": "Downlink PRB Utilization",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": {"defaults": {}, "overrides": []},
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0},
+      "id": 2,
+      "targets": [{"expr": "ran_cell_avg_latency_ms", "legendFormat": "{{cell_id}} latency"}],
+      "title": "Average Cell Latency",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": {"defaults": {}, "overrides": []},
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8},
+      "id": 3,
+      "targets": [{"expr": "ran_cell_packet_loss_pct", "legendFormat": "{{cell_id}} loss"}],
+      "title": "Packet Loss",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": {"defaults": {}, "overrides": []},
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8},
+      "id": 4,
+      "targets": [{"expr": "xapp_active_alerts", "legendFormat": "{{severity}}"}],
+      "title": "Active xApp Alerts",
+      "type": "timeseries"
+    }
+  ],
+  "schemaVersion": 39,
+  "tags": ["ran", "xapp", "oai"],
+  "templating": {"list": []},
+  "time": {"from": "now-15m", "to": "now"},
+  "title": "RAN xApp Overview",
+  "uid": "ran-xapp-overview",
+  "version": 1
+}

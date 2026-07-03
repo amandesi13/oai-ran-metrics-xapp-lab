@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oai-ran-metrics-xapp-lab"
+version = "0.1.0"
+description = "OAI-inspired RAN metrics source and xApp lab for KPI collection, anomaly detection, and Prometheus/Grafana observability."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Amandeep Singh" }
+]
+keywords = ["openairinterface", "oran", "xapp", "ran", "5g", "prometheus", "grafana"]
+dependencies = [
+  "fastapi>=0.115",
+  "prometheus-client>=0.20",
+  "pydantic>=2.7",
+  "requests>=2.31",
+  "uvicorn>=0.30"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "httpx>=0.27"]
+
+[project.scripts]
+oai-ran-source = "oai_xapp_lab.source_app:main"
+oai-ran-xapp = "oai_xapp_lab.xapp_service:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oai_xapp_lab"]

@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: RAN xApp Dashboards
+    orgId: 1
+    folder: RAN Lab
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards

@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "ran-xapp"
+    static_configs:
+      - targets: ["xapp:8001"]
