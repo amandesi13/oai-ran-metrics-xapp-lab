@@ -1,6 +1,10 @@
 # OAI RAN Metrics xApp Lab
 
-[![CI](https://github.com/amandesi13/oai-ran-metrics-xapp-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/amandesi13/oai-ran-metrics-xapp-lab/actions/workflows/ci.yml)\n[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)](https://www.python.org/)\n[![Prometheus](https://img.shields.io/badge/metrics-Prometheus-E6522C)](https://prometheus.io/)\n[![Grafana](https://img.shields.io/badge/dashboards-Grafana-F46800)](https://grafana.com/)\n[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)\n
+[![CI](https://github.com/amandesi13/oai-ran-metrics-xapp-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/amandesi13/oai-ran-metrics-xapp-lab/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)](https://www.python.org/)
+[![Prometheus](https://img.shields.io/badge/metrics-Prometheus-E6522C)](https://prometheus.io/)
+[![Grafana](https://img.shields.io/badge/dashboards-Grafana-F46800)](https://grafana.com/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 OAI-inspired 5G RAN observability lab that simulates OpenAirInterface-style RAN metrics, collects them through an xApp-like service, detects KPI anomalies, and exports Prometheus metrics for Grafana dashboards.
 
