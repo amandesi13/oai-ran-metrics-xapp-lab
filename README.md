@@ -1,5 +1,11 @@
 # OAI RAN Metrics xApp Lab
 
+[![CI](https://github.com/amandesi13/oai-ran-metrics-xapp-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/amandesi13/oai-ran-metrics-xapp-lab/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)](https://www.python.org/)
+[![Prometheus](https://img.shields.io/badge/metrics-Prometheus-E6522C)](https://prometheus.io/)
+[![Grafana](https://img.shields.io/badge/dashboards-Grafana-F46800)](https://grafana.com/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 OAI-inspired 5G RAN observability lab that simulates OpenAirInterface-style RAN metrics, collects them through an xApp-like service, detects KPI anomalies, and exports Prometheus metrics for Grafana dashboards.
 
 This project is designed as a practical bridge between **OpenAirInterface**, **O-RAN xApps**, **RAN KPI collection**, and production-style observability. It is intentionally lightweight enough to run locally, while still showing the engineering structure expected in telecom/cloud infrastructure teams.
